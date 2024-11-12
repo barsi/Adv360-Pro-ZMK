@@ -35,7 +35,7 @@
         test_macro: test_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(SEMI) &kp I &kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G>;
+            bindings = <&kp LC(SEMICOLON) &kp I &kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G>;
             label = "TEST_MACRO";
         };
     };
