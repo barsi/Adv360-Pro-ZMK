@@ -28,8 +28,15 @@
         vim_save: vim_save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp W &kp RET>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp RET>;
             label = "VIM_SAVE";
+        };
+
+        vim_close_tabs: vim_close_tabs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp PRCNT &kp B &kp D &kp E &kp L &kp E &kp T &kp E &kp SPACE &kp PIPE &kp SPACE &kp E &kp D &kp I &kp T &kp SPACE &kp POUND &kp SPACE &kp PIPE &kp SPACE &kp B &kp D &kp E &kp L &kp E &kp T &kp E &kp SPACE &kp POUND>;
+            label = "VIM_CLOSE_TABS";
         };
     };
 
@@ -92,11 +99,11 @@
 
         functions-layer {
             bindings = <
-&trans  &trans  &trans     &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans           &trans
-&trans  &trans  &trans     &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN  &trans
-&trans  &trans  &vim_save  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans
-&trans  &trans  &trans     &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans           &trans
-&trans  &trans  &trans     &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans           &trans
+&trans  &trans  &trans           &trans  &trans  &trans      &trans                                      &trans  &trans  &trans        &trans        &trans  &trans           &trans
+&trans  &trans  &trans           &trans  &trans  &trans      &trans                                      &trans  &trans  &trans        &trans        &trans  &kp PRINTSCREEN  &trans
+&trans  &trans  &vim_save        &trans  &trans  &trans      &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans        &trans        &trans  &trans           &trans
+&trans  &trans  &vim_close_tabs  &trans  &trans  &kp C_MENU                  &trans      &trans                  &trans  &kp C_MENU    &trans        &trans  &trans           &trans
+&trans  &trans  &trans           &trans  &trans              &trans  &trans  &trans      &trans  &trans  &trans          &kp C_VOL_UP  &kp C_VOL_DN  &trans  &trans           &trans
             >;
         };
     };
