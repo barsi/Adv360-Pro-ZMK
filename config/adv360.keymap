@@ -47,6 +47,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        numbers_layer {
+            bindings = <&tog 6>;
+            key-positions = <25 24>;
+        };
+
+        windows_browsing {
+            bindings = <&kp RA(TAB)>;
+            key-positions = <71 72>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -116,11 +130,11 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans  &trans                                      &trans  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans  &trans                                      &trans  &trans  &kp NUMBER_6  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp N7        &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans        &trans        &trans        &kp N5        &trans                  &trans      &trans                  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans                &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans  &trans                                      &trans  &trans     &trans        &trans     &trans        &trans  &trans
+&trans  &kp MINUS     &kp PERIOD    &kp ASTERISK  &kp SLASH     &trans  &trans                                      &trans  &trans     &kp NUMBER_6  &kp SLASH  &kp ASTERISK  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans     &kp N7        &kp N8     &kp N9        &kp N0  &trans
+&trans  &trans        &kp COMMA     &kp PLUS      &kp N5        &trans                  &trans      &trans                  &kp MINUS  &kp PLUS      &trans     &trans        &trans  &trans
+&trans  &trans        &trans        &trans        &trans                &trans  &trans  &trans      &trans  &trans  &trans             &trans        &trans     &trans        &trans  &trans
             >;
         };
     };
