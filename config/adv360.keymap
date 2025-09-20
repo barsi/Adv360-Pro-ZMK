@@ -53,11 +53,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2           &kp N3    &kp N4     &kp N5          &tog 1                                                   &mo 3      &kp N6  &kp N7          &kp N8     &kp N9    &kp N0                      &kp MINUS
-&kp TAB    &kp Q      &hm RIGHT_GUI W  &kp E     &kp R      &hm LEFT_ALT T  &none                                                    &none      &kp Y   &hm LEFT_ALT U  &kp I      &kp O     &kp P                       &kp BSLH
-&kp ESC    &kp A      &kp S            &kp D     &lt 4 F    &kp G           &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &lt 4 J         &hm K K    &kp L     &kp SEMI                    &kp SQT
-&kp LSHFT  &kp Z      &kp X            &kp C     &lt 5 V    &hm RC(B) B                          &kp HOME      &kp PG_UP                        &kp N   &lt 5 M         &kp COMMA  &kp DOT   &hm CAPSLOCK RIGHT_BRACKET  &kp RSHFT
-&mo 2      &kp GRAVE  &tog 4           &kp LEFT  &kp RIGHT                  &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP          &kp DOWN   &kp LBKT  &kp RBKT                    &mo 2
+&kp EQUAL  &kp N1              &kp N2            &kp N3    &kp N4     &kp N5          &tog 1                                                   &mo 3      &kp N6  &kp N7          &kp N8     &kp N9             &kp N0                       &kp MINUS
+&kp TAB    &kp Q               &hm RIGHT_GUI W   &kp E     &kp R      &hm LEFT_ALT T  &none                                                    &none      &kp Y   &hm LEFT_ALT U  &kp I      &kp O              &kp P                        &kp BSLH
+&kp ESC    &hm LEFT_CONTROL A  &hm LEFT_SHIFT S  &kp D     &lt 4 F    &kp G           &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &lt 4 J         &kp K      &hm RIGHT_SHIFT L  &hm RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z               &kp X             &kp C     &lt 5 V    &hm RC(B) B                          &kp HOME      &kp PG_UP                        &kp N   &lt 5 M         &kp COMMA  &kp DOT            &hm CAPSLOCK RIGHT_BRACKET   &kp RSHFT
+&mo 2      &kp GRAVE           &tog 6            &kp LEFT  &kp RIGHT                  &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP          &kp DOWN   &kp LBKT           &kp RBKT                     &mo 2
             >;
         };
 
@@ -111,6 +111,16 @@
 &trans  &trans  &vim_save        &vim_create_struct  &trans  &kp PAGE_DOWN  &kp RA(F4)  &trans  &trans      &trans  &trans  &trans  &kp HOME  &trans        &trans        &trans  &trans           &trans
 &trans  &trans  &vim_close_tabs  &trans              &trans  &kp C_MENU                         &trans      &trans                  &trans    &kp C_MENU    &trans        &trans  &trans           &trans
 &trans  &trans  &trans           &trans              &trans                 &trans      &trans  &trans      &trans  &trans  &trans            &kp C_VOL_UP  &kp C_VOL_DN  &trans  &trans           &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans        &trans  &trans                                      &trans  &trans  &trans        &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans  &trans                                      &trans  &trans  &kp NUMBER_6  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp N7        &kp N8  &kp N9  &kp N0  &trans
+&trans  &trans        &trans        &trans        &kp N5        &trans                  &trans      &trans                  &trans  &trans        &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans                &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans  &trans  &trans  &trans
             >;
         };
     };
