@@ -96,11 +96,11 @@
 
         code-editor {
             bindings = <
-&trans  &trans        &trans         &trans     &trans             &trans        &trans                                      &trans             &trans        &trans                &trans          &trans                 &trans           &trans
-&trans  &trans        &kp BACKSLASH  &kp Z      &kp DOUBLE_QUOTES  &kp PLUS      &trans                                      &kp LEFT_BRACKET   &kp COLON     &kp COMMA             &kp PERIOD      &kp AT_SIGN            &trans           &trans
-&trans  &kp QUESTION  &kp SLASH      &kp EQUAL  &kp UNDERSCORE     &kp KP_MINUS  &trans  &trans  &trans      &trans  &trans  &kp RIGHT_BRACKET  &kp KP_COMMA  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans
-&trans  &trans        &kp PIPE       &kp GRAVE  &kp AMPERSAND      &kp PERCENT                   &trans      &trans                             &kp ASTERISK  &kp EXCLAMATION       &kp SLASH       &trans                 &trans           &trans
-&trans  &trans        &trans         &trans     &trans                           &trans  &trans  &trans      &trans  &trans  &trans                           &kp C_VOL_UP          &kp C_VOL_DN    &trans                 &trans           &trans
+&trans  &trans           &trans         &trans     &trans             &trans             &trans                                      &trans     &trans        &trans                &trans          &trans                 &trans           &trans
+&trans  &trans           &kp BACKSLASH  &kp Z      &kp DOUBLE_QUOTES  &kp LEFT_BRACKET   &trans                                      &kp PLUS   &kp COLON     &kp COMMA             &kp PERIOD      &kp AT_SIGN            &trans           &trans
+&trans  &kp QUESTION     &kp SLASH      &kp EQUAL  &kp UNDERSCORE     &kp RIGHT_BRACKET  &trans  &trans  &trans      &trans  &trans  &kp MINUS  &kp COMMA     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans
+&trans  &kp EXCLAMATION  &kp PIPE       &kp GRAVE  &kp AMPERSAND      &kp PERCENT                        &trans      &trans                     &kp ASTERISK  &kp EXCLAMATION       &kp SLASH       &trans                 &trans           &trans
+&trans  &trans           &trans         &trans     &trans                                &trans  &trans  &trans      &trans  &trans  &trans                   &kp C_VOL_UP          &kp C_VOL_DN    &trans                 &trans           &trans
             >;
         };
 
