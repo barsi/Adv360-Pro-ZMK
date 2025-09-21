@@ -74,6 +74,26 @@
             bindings = <&kp CAPS>;
             key-positions = <65 70>;
         };
+
+        right_alt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <23 24>;
+        };
+
+        left_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <18 17>;
+        };
+
+        left_ctrl {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <29 30>;
+        };
+
+        right_ctrl {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <44 43>;
+        };
     };
 
     keymap {
@@ -82,11 +102,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1              &kp N2           &kp N3    &kp N4     &kp N5          &tog 1                                                   &mo 3      &kp N6  &kp N7          &kp N8     &kp N9    &kp N0                       &kp MINUS
-&kp TAB    &kp Q               &hm RIGHT_GUI W  &kp E     &kp R      &hm LEFT_ALT T  &none                                                    &none      &kp Y   &hm LEFT_ALT U  &kp I      &kp O     &kp P                        &kp BSLH
-&kp ESC    &hm LEFT_CONTROL A  &kp S            &kp D     &lt 4 F    &kp G           &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &lt 4 J         &kp K      &kp L     &hm RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z               &kp X            &kp C     &lt 5 V    &hm RC(B) B                          &kp HOME      &kp PG_UP                        &kp N   &lt 5 M         &kp COMMA  &kp DOT   &hm CAPSLOCK RIGHT_BRACKET   &kp RSHFT
-&mo 2      &kp GRAVE           &tog 6           &kp LEFT  &kp RIGHT                  &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP          &kp DOWN   &kp LBKT  &kp RBKT                     &mo 2
+&kp EQUAL  &kp N1     &kp N2           &kp N3    &kp N4     &kp N5          &tog 1                                                   &mo 3      &kp N6  &kp N7   &kp N8     &kp N9    &kp N0                      &kp MINUS
+&kp TAB    &kp Q      &hm RIGHT_GUI W  &kp E     &kp R      &hm LEFT_ALT T  &none                                                    &none      &kp Y   &kp U    &kp I      &kp O     &kp P                       &kp BSLH
+&kp ESC    &kp A      &kp S            &kp D     &lt 4 F    &kp G           &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &lt 4 J  &kp K      &kp L     &kp SEMICOLON               &kp SQT
+&kp LSHFT  &kp Z      &kp X            &kp C     &lt 5 V    &hm RC(B) B                          &kp HOME      &kp PG_UP                        &kp N   &lt 5 M  &kp COMMA  &kp DOT   &hm CAPSLOCK RIGHT_BRACKET  &kp RSHFT
+&mo 2      &kp GRAVE  &tog 6           &kp LEFT  &kp RIGHT                  &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN   &kp LBKT  &kp RBKT                    &mo 2
             >;
         };
 
