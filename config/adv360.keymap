@@ -80,11 +80,6 @@
             key-positions = <23 24>;
         };
 
-        left_alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <18 17>;
-        };
-
         left_ctrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <29 30>;
@@ -93,6 +88,11 @@
         right_ctrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <44 43>;
+        };
+
+        left_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <3 4>;
         };
     };
 
@@ -146,7 +146,7 @@
         code-editor {
             bindings = <
 &trans  &trans        &trans         &trans            &trans             &trans       &trans                                      &trans     &trans             &trans                &trans          &trans                 &trans           &trans
-&trans  &trans        &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOLLAR   &trans                                      &kp PLUS   &kp COLON          &kp COMMA             &kp DOLLAR      &kp AT_SIGN            &kp EXCLAMATION  &trans
+&trans  &trans        &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOLLAR   &trans                                      &kp PLUS   &kp COLON          &kp PLUS              &kp MINUS       &kp AT_SIGN            &kp EXCLAMATION  &trans
 &trans  &kp QUESTION  &kp SLASH      &kp EQUAL         &kp UNDERSCORE     &kp CARET    &trans  &trans  &trans      &trans  &trans  &kp MINUS  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans
 &trans  &kp CARET     &kp PIPE       &kp GRAVE         &kp AMPERSAND      &kp PERCENT                  &trans      &trans                     &kp ASTERISK       &kp EXCLAMATION       &kp SLASH       &kp CARET              &trans           &trans
 &trans  &trans        &trans         &trans            &trans                          &trans  &trans  &trans      &trans  &trans  &trans                        &kp C_VOL_UP          &kp C_VOL_DN    &trans                 &trans           &trans
