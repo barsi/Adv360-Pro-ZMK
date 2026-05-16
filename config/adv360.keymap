@@ -14,13 +14,13 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            quick_tap_ms = <400>;
+            tapping-term-ms = <300>;
+            quick_tap_ms = <200>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <400>;
-            require-prior-idle-ms = <400>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <200>;
         };
     };
 
@@ -94,6 +94,16 @@
             bindings = <&kp LEFT_ALT>;
             key-positions = <3 4>;
         };
+
+        right_super {
+            bindings = <&kp RIGHT_WIN>;
+            key-positions = <57 56>;
+        };
+
+        left_super {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <48 49>;
+        };
     };
 
     keymap {
@@ -102,11 +112,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7   &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W   &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U    &kp I      &kp O     &kp P          &kp BSLH
-&kp ESC    &kp A      &kp S   &kp D     &lt 4 F    &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &lt 4 J  &kp K      &kp L     &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z      &kp X   &kp C     &lt 5 V    &kp B                        &kp HOME      &kp PG_UP                        &kp N   &lt 5 M  &kp COMMA  &kp DOT   &kp SLASH      &kp RSHFT
-&mo 2      &kp GRAVE  &tog 6  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN   &kp LBKT  &kp RBKT       &mo 2
+&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4     &kp N5   &tog 1                                                   &mo 3      &kp N6  &kp N7   &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp E     &kp R      &kp T    &none                                                    &none      &kp Y   &kp U    &kp I      &kp O     &kp P          &kp BSLH
+&kp ESC    &kp A      &kp S   &kp D     &lt 4 F    &lt 7 G  &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &lt 4 J  &kp K      &kp L     &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z      &kp X   &kp C     &lt 5 V    &kp B                         &kp HOME      &kp PG_UP                        &kp N   &lt 5 M  &kp COMMA  &kp DOT   &kp SLASH      &kp RSHFT
+&mo 2      &kp GRAVE  &tog 6  &kp LEFT  &kp RIGHT           &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN   &kp LBKT  &kp RBKT       &mo 2
             >;
         };
 
@@ -170,6 +180,16 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans     &kp N7        &kp N8     &kp N9        &kp N0  &trans
 &trans  &trans        &kp COMMA     &kp PLUS      &kp N5        &trans                  &trans      &trans                  &kp MINUS  &kp PLUS      &trans     &trans        &trans  &trans
 &trans  &trans        &trans        &trans        &trans                &trans  &trans  &trans      &trans  &trans  &trans             &trans        &trans     &trans        &trans  &trans
+            >;
+        };
+
+        vim_navigation {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
